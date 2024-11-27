@@ -1,0 +1,31 @@
+{
+	"name": "express",
+	"version": "1.0.0",
+	"description": "Projeto estudo express",
+	"main": "server.ts",
+	"author": "MolitorLucas",
+	"license": "MIT",
+	"scripts": {
+		"dev": "nodemon server.ts --watch -e ts",
+		"compile": "tsc",
+		"start": "node ./dist/server.js"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^16.4.5",
+		"express": "^4.21.1",
+		"express-async-errors": "^3.1.1",
+		"helmet": "^8.0.0",
+		"morgan": "^1.10.0"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.17",
+		"@types/dotenv": "^8.2.3",
+		"@types/express": "^5.0.0",
+		"@types/helmet": "^4.0.0",
+		"@types/morgan": "^1.9.9",
+		"nodemon": "^3.1.7",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.7.2"
+	}
+}
