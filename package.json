@@ -5,12 +5,16 @@
 	"main": "server.ts",
 	"author": "MolitorLucas",
 	"license": "MIT",
+	"prisma": {
+		"schema": "./src/db/schema"
+	},
 	"scripts": {
 		"dev": "nodemon server.ts --watch -e ts",
 		"compile": "tsc",
 		"start": "node ./dist/server.js"
 	},
 	"dependencies": {
+		"@prisma/client": "5.22.0",
 		"cors": "^2.8.5",
 		"dotenv": "^16.4.5",
 		"express": "^4.21.1",
@@ -25,6 +29,7 @@
 		"@types/helmet": "^4.0.0",
 		"@types/morgan": "^1.9.9",
 		"nodemon": "^3.1.7",
+		"prisma": "^5.22.0",
 		"ts-node": "^10.9.2",
 		"typescript": "^5.7.2"
 	}
